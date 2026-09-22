@@ -1,0 +1,200 @@
+0.00.056.380 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.056.386 I device_info:
+0.00.057.368 I   - Vulkan0 : Intel(R) Graphics (18268 MiB, 17500 MiB free)
+0.00.057.376 I   - CPU     : Intel(R) Core(TM) Ultra 7 356H (32049 MiB, 18897 MiB free)
+0.00.057.407 I system_info: n_threads = 16 (n_threads_batch = 16) / 16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.057.411 I build: 71 NXWVB306.1 / b9568 (4e592a1) with MSVC 19.44.35213.0 for x64 
+0.00.057.412 I srv  llama_server: n_parallel is set to auto, using n_parallel = 4 and kv_unified = true
+0.00.057.413 I Environment Variables: 
+CLI Command: C:/Users/miphi/aiDAPTIV_NXWVB306.1_x64/aiDAPTIV_NXWVB306.1_x64/llama-server.exe --model C:/Users/miphi/models/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf --debug-log-path C:/Windows/Temp/8K --log-file C:/Windows/Temp/8K\2026-09-21_16-12-43_llama_server.log --ctx-size 32000 --port 8080 --host 127.0.0.1 --flash-attn auto --kv-cache-resume-policy 1 -ngl 100 --no-mmap --offload-path D:/nvme0/inference --vram-experts-cached-gb 8
+Configuration Content: 
+
+[MDW][Info][Runtime] Start Synchronizing
+[MDW][Info][Runtime] Finish Synchronizing
+[MDW][Info][Runtime] Powered by Phison aiDAPTIV+
+0.09.199.063 I srv          init: running without SSL
+0.09.199.092 I srv          init: using 15 threads for HTTP server
+0.09.199.196 I srv         start: binding port with default address family
+0.09.212.587 I srv  llama_server: loading model
+0.09.212.617 I srv    load_model: loading model 'C:/Users/miphi/models/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf'
+0.09.212.712 I common_init_result: fitting params to device memory ...
+0.09.212.715 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.10.371.991 W load: control-looking token:      1 '<eos>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.10.372.263 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.10.372.635 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.10.403.412 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[MDW][Info][Runtime] Number Vram MoE expert per layer: 71
+[MDW][Info][Runtime] Number Dram MoE expert per layer: 0
+[MDW][Info][Runtime] Shared Buffer Layers: 2
+[MDW][Info][Runtime] Vram size saved (Estimated): 5.420 GB
+[MDW][Info][Runtime] Offloaded layers: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29
+[MDW][Info][Runtime] Adopted a shared expert cache from a previous run.
+[MDW][Info][Runtime] Preload experts... 
+0.18.614.753 W llama_context: n_ctx_seq (32000) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.19.942.595 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.20.287.078 I srv    load_model: initializing slots, n_slots = 4
+0.20.728.168 W common_speculative_init: no implementations specified for speculative decoding
+0.20.728.178 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 32000
+0.20.728.186 I slot   load_model: id  1 | task -1 | new slot, n_ctx = 32000
+0.20.728.187 I slot   load_model: id  2 | task -1 | new slot, n_ctx = 32000
+0.20.728.187 I slot   load_model: id  3 | task -1 | new slot, n_ctx = 32000
+0.20.728.242 I srv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+0.20.728.242 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.20.728.243 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+[MDW][Info][Runtime] Tokens in node: 8
+[MDW][Info][Runtime] Transfer Buffer Node Count: 128
+[MDW][Info][Runtime] Arrange Node Count: 16
+[MDW][Info][Runtime] Node Sizes: 163840, 1802240
+[MDW][Info][Runtime] Shard Size: 163840
+[MDW][Info][Runtime] DRAM Maximum Node Count: 44745, CACHE Maximum Node Count: 46081356013
+0.20.798.331 W [MDW][Warning][Runtime] Trying to allocate 7331020800 bytes, but only 5188472832 bytes of DRAM are available. Insufficient DRAM capacity may reduce performance due to memory swapping.
+[MDW][Info][Runtime] Trying to resume KV cache...
+[MDW][Info][Runtime] KV cache resume completed
+[MDW][Info][Runtime] Resume subfolder: benchmark_8k
+[MDW][Info][Runtime] Resume subfolder: test_2
+0.20.836.281 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.20.845.309 I init: chat template, example_format: '<|turn>system
+<|think|>
+You are a helpful assistant<turn|>
+<|turn>user
+Hello<turn|>
+<|turn>model
+Hi there<turn|>
+<|turn>user
+How are you?<turn|>
+<|turn>model
+'
+0.20.846.241 I srv          init: init: chat template, thinking = 1
+0.20.846.260 I srv  llama_server: model loaded
+0.20.846.262 I srv  llama_server: server is listening on http://127.0.0.1:8080
+0.20.846.271 I srv  update_slots: all slots are idle
+1.18.164.957 I srv  params_from_: Chat format: peg-gemma4
+1.18.183.775 I slot get_availabl: id  3 | task -1 | selected slot by LRU, t_last = -1
+1.18.183.951 I slot launch_slot_: id  3 | task 0 | processing task, is_child = 0
+1.18.184.086 I slot update_slots: id  3 | task 0 | Hit token cnt (GPU): 0
+1.18.585.361 I slot update_slots: id  3 | task 0 | Hit token cnt (DRAM): 0
+1.18.585.369 I slot update_slots: id  3 | task 0 | Hit token cnt (CACHE): 8432
+[MDW][Info][Runtime] Save 0 tokens to folder 'benchmark_8k'
+1.18.824.319 I slot update_slots: id  3 | task 0 | saved checkpoint to Cache Storage (n_tokens = 8432)
+1.20.531.897 I reasoning-budget: activated, budget=2147483647 tokens
+1.31.537.036 I slot print_timing: id  3 | task 0 | n_decoded =    100, tg =   9.00 t/s
+1.34.579.669 I slot print_timing: id  3 | task 0 | n_decoded =    128, tg =   9.04 t/s
+1.37.674.692 I slot print_timing: id  3 | task 0 | n_decoded =    156, tg =   9.04 t/s
+1.40.705.521 I slot print_timing: id  3 | task 0 | n_decoded =    184, tg =   9.07 t/s
+1.43.733.767 I slot print_timing: id  3 | task 0 | n_decoded =    212, tg =   9.09 t/s
+1.46.768.501 I slot print_timing: id  3 | task 0 | n_decoded =    241, tg =   9.15 t/s
+1.49.787.152 I slot print_timing: id  3 | task 0 | n_decoded =    268, tg =   9.13 t/s
+1.52.828.209 I slot print_timing: id  3 | task 0 | n_decoded =    295, tg =   9.10 t/s
+1.55.897.824 I slot print_timing: id  3 | task 0 | n_decoded =    323, tg =   9.10 t/s
+1.58.910.404 I slot print_timing: id  3 | task 0 | n_decoded =    351, tg =   9.12 t/s
+2.01.959.336 I slot print_timing: id  3 | task 0 | n_decoded =    379, tg =   9.12 t/s
+2.05.042.308 I slot print_timing: id  3 | task 0 | n_decoded =    408, tg =   9.14 t/s
+2.08.048.677 I slot print_timing: id  3 | task 0 | n_decoded =    435, tg =   9.13 t/s
+2.11.139.985 I slot print_timing: id  3 | task 0 | n_decoded =    464, tg =   9.15 t/s
+2.14.243.748 I slot print_timing: id  3 | task 0 | n_decoded =    493, tg =   9.16 t/s
+2.17.359.630 I slot print_timing: id  3 | task 0 | n_decoded =    521, tg =   9.15 t/s
+2.20.393.052 I slot print_timing: id  3 | task 0 | n_decoded =    549, tg =   9.15 t/s
+2.23.422.032 I slot print_timing: id  3 | task 0 | n_decoded =    576, tg =   9.14 t/s
+2.26.487.509 I slot print_timing: id  3 | task 0 | n_decoded =    605, tg =   9.16 t/s
+2.29.493.573 I slot print_timing: id  3 | task 0 | n_decoded =    632, tg =   9.15 t/s
+2.32.578.372 I slot print_timing: id  3 | task 0 | n_decoded =    659, tg =   9.13 t/s
+2.35.612.270 I slot print_timing: id  3 | task 0 | n_decoded =    687, tg =   9.14 t/s
+2.38.649.971 I slot print_timing: id  3 | task 0 | n_decoded =    714, tg =   9.13 t/s
+2.41.758.853 I slot print_timing: id  3 | task 0 | n_decoded =    741, tg =   9.11 t/s
+2.44.773.924 I slot print_timing: id  3 | task 0 | n_decoded =    769, tg =   9.12 t/s
+2.47.863.717 I slot print_timing: id  3 | task 0 | n_decoded =    798, tg =   9.13 t/s
+2.50.934.762 I slot print_timing: id  3 | task 0 | n_decoded =    825, tg =   9.12 t/s
+2.54.004.255 I slot print_timing: id  3 | task 0 | n_decoded =    852, tg =   9.10 t/s
+2.57.007.002 I slot print_timing: id  3 | task 0 | n_decoded =    879, tg =   9.10 t/s
+3.00.083.788 I slot print_timing: id  3 | task 0 | n_decoded =    906, tg =   9.09 t/s
+3.03.153.165 I slot print_timing: id  3 | task 0 | n_decoded =    934, tg =   9.09 t/s
+3.06.209.812 I slot print_timing: id  3 | task 0 | n_decoded =    961, tg =   9.08 t/s
+3.09.266.821 I slot print_timing: id  3 | task 0 | n_decoded =    989, tg =   9.09 t/s
+3.12.355.164 I slot print_timing: id  3 | task 0 | n_decoded =   1016, tg =   9.08 t/s
+3.15.397.564 I slot print_timing: id  3 | task 0 | n_decoded =   1044, tg =   9.08 t/s
+3.18.473.245 I slot print_timing: id  3 | task 0 | n_decoded =   1071, tg =   9.07 t/s
+3.21.508.850 I slot print_timing: id  3 | task 0 | n_decoded =   1099, tg =   9.08 t/s
+3.24.577.178 I slot print_timing: id  3 | task 0 | n_decoded =   1126, tg =   9.07 t/s
+3.27.614.614 I slot print_timing: id  3 | task 0 | n_decoded =   1153, tg =   9.07 t/s
+3.30.706.970 I slot print_timing: id  3 | task 0 | n_decoded =   1181, tg =   9.07 t/s
+3.33.727.554 I slot print_timing: id  3 | task 0 | n_decoded =   1208, tg =   9.06 t/s
+3.36.838.308 I slot print_timing: id  3 | task 0 | n_decoded =   1236, tg =   9.06 t/s
+3.39.916.163 I slot print_timing: id  3 | task 0 | n_decoded =   1264, tg =   9.06 t/s
+3.42.939.856 I slot print_timing: id  3 | task 0 | n_decoded =   1289, tg =   9.05 t/s
+3.45.946.462 I slot print_timing: id  3 | task 0 | n_decoded =   1316, tg =   9.04 t/s
+3.49.014.239 I slot print_timing: id  3 | task 0 | n_decoded =   1344, tg =   9.05 t/s
+3.52.029.690 I slot print_timing: id  3 | task 0 | n_decoded =   1372, tg =   9.05 t/s
+3.55.056.458 I slot print_timing: id  3 | task 0 | n_decoded =   1401, tg =   9.06 t/s
+3.58.091.784 I slot print_timing: id  3 | task 0 | n_decoded =   1428, tg =   9.06 t/s
+4.01.158.422 I slot print_timing: id  3 | task 0 | n_decoded =   1456, tg =   9.06 t/s
+4.04.163.918 I slot print_timing: id  3 | task 0 | n_decoded =   1483, tg =   9.06 t/s
+4.07.227.317 I slot print_timing: id  3 | task 0 | n_decoded =   1510, tg =   9.05 t/s
+4.10.336.983 I slot print_timing: id  3 | task 0 | n_decoded =   1537, tg =   9.05 t/s
+4.13.355.316 I slot print_timing: id  3 | task 0 | n_decoded =   1564, tg =   9.04 t/s
+4.16.430.240 I slot print_timing: id  3 | task 0 | n_decoded =   1591, tg =   9.04 t/s
+4.19.484.593 I slot print_timing: id  3 | task 0 | n_decoded =   1617, tg =   9.03 t/s
+4.22.530.138 I slot print_timing: id  3 | task 0 | n_decoded =   1644, tg =   9.03 t/s
+4.25.621.958 I slot print_timing: id  3 | task 0 | n_decoded =   1672, tg =   9.03 t/s
+4.28.709.963 I slot print_timing: id  3 | task 0 | n_decoded =   1700, tg =   9.03 t/s
+4.31.743.748 I slot print_timing: id  3 | task 0 | n_decoded =   1727, tg =   9.03 t/s
+4.34.777.706 I slot print_timing: id  3 | task 0 | n_decoded =   1753, tg =   9.02 t/s
+4.37.801.834 I slot print_timing: id  3 | task 0 | n_decoded =   1779, tg =   9.01 t/s
+4.40.908.255 I slot print_timing: id  3 | task 0 | n_decoded =   1806, tg =   9.01 t/s
+4.43.943.707 I slot print_timing: id  3 | task 0 | n_decoded =   1832, tg =   9.00 t/s
+4.46.962.432 I slot print_timing: id  3 | task 0 | n_decoded =   1859, tg =   9.00 t/s
+4.50.056.634 I slot print_timing: id  3 | task 0 | n_decoded =   1886, tg =   9.00 t/s
+4.53.125.319 I slot print_timing: id  3 | task 0 | n_decoded =   1912, tg =   8.99 t/s
+4.56.191.906 I slot print_timing: id  3 | task 0 | n_decoded =   1939, tg =   8.99 t/s
+4.59.242.204 I slot print_timing: id  3 | task 0 | n_decoded =   1966, tg =   8.99 t/s
+5.02.248.617 I slot print_timing: id  3 | task 0 | n_decoded =   1991, tg =   8.98 t/s
+5.05.252.848 I slot print_timing: id  3 | task 0 | n_decoded =   2017, tg =   8.97 t/s
+[MDW][Info][Runtime] Start Synchronizing
+5.08.368.597 I slot print_timing: id  3 | task 0 | n_decoded =   2044, tg =   8.97 t/s
+[MDW][Info][Runtime] Finish Synchronizing
+5.11.470.337 I slot print_timing: id  3 | task 0 | n_decoded =   2070, tg =   8.96 t/s
+5.14.576.955 I slot print_timing: id  3 | task 0 | n_decoded =   2096, tg =   8.95 t/s
+5.17.654.349 I slot print_timing: id  3 | task 0 | n_decoded =   2122, tg =   8.95 t/s
+5.20.774.622 I slot print_timing: id  3 | task 0 | n_decoded =   2148, tg =   8.94 t/s
+5.23.868.887 I slot print_timing: id  3 | task 0 | n_decoded =   2175, tg =   8.93 t/s
+5.26.939.989 I slot print_timing: id  3 | task 0 | n_decoded =   2202, tg =   8.93 t/s
+5.30.059.838 I slot print_timing: id  3 | task 0 | n_decoded =   2229, tg =   8.93 t/s
+5.33.067.499 I slot print_timing: id  3 | task 0 | n_decoded =   2255, tg =   8.93 t/s
+5.36.165.943 I slot print_timing: id  3 | task 0 | n_decoded =   2282, tg =   8.92 t/s
+5.39.252.493 I slot print_timing: id  3 | task 0 | n_decoded =   2309, tg =   8.92 t/s
+5.41.796.174 I reasoning-budget: deactivated (natural end)
+5.42.261.094 I slot print_timing: id  3 | task 0 | n_decoded =   2335, tg =   8.92 t/s
+5.45.360.079 I slot print_timing: id  3 | task 0 | n_decoded =   2362, tg =   8.92 t/s
+5.48.439.836 I slot print_timing: id  3 | task 0 | n_decoded =   2389, tg =   8.91 t/s
+5.50.005.379 I slot update_slots: id  3 | task 0 | Multi-token MoE expert hit rate (GPU): 67.09%
+5.50.005.387 I slot update_slots: id  3 | task 0 | Multi-token MoE expert hit rate (DRAM):  0.00%
+5.50.005.389 I slot update_slots: id  3 | task 0 | Single-token MoE expert hit rate (GPU): 97.14%
+5.50.005.389 I slot update_slots: id  3 | task 0 | Single-token MoE expert hit rate (DRAM):  0.00%
+[MDW][Info][Runtime] Save 2432 tokens to folder 'benchmark_8k'
+5.51.521.214 I slot print_timing: id  3 | task 0 | prompt eval time =    2235.48 ms /    36 tokens (   62.10 ms per token,    16.10 tokens per second)
+5.51.521.217 I slot print_timing: id  3 | task 0 |        eval time =  269565.72 ms /  2402 tokens (  112.23 ms per token,     8.91 tokens per second)
+5.51.521.218 I slot print_timing: id  3 | task 0 |       total time =  271801.20 ms /  2438 tokens
+5.51.521.219 I slot print_timing: id  3 | task 0 |    graphs reused =       2383
+5.51.521.766 I slot      release: id  3 | task 0 | stop processing: n_tokens = 10869, truncated = 0
+5.51.521.803 I srv  update_slots: all slots are idle
+5.52.119.938 I srv  params_from_: Chat format: peg-gemma4
+5.52.120.667 I slot get_availabl: id  2 | task -1 | selected slot by LRU, t_last = -1
+5.52.120.714 I slot launch_slot_: id  2 | task 2404 | processing task, is_child = 0
+5.52.120.725 I slot update_slots: id  2 | task 2404 | Hit token cnt (GPU): 0
+5.52.204.465 I slot update_slots: id  2 | task 2404 | Hit token cnt (DRAM): 0
+5.52.204.474 I slot update_slots: id  2 | task 2404 | Hit token cnt (CACHE): 152
+[MDW][Info][Runtime] Save 96 tokens to folder 'benchmark_8k'
+5.53.665.367 I slot update_slots: id  2 | task 2404 | saved checkpoint to Cache Storage (n_tokens = 248)
+6.04.990.886 I slot print_timing: id  2 | task 2404 | n_decoded =    100, tg =  10.50 t/s
+6.08.019.837 I slot print_timing: id  2 | task 2404 | n_decoded =    134, tg =  10.68 t/s
+6.11.029.636 I slot print_timing: id  2 | task 2404 | n_decoded =    166, tg =  10.67 t/s
+6.11.757.736 I slot update_slots: id  2 | task 2404 | Multi-token MoE expert hit rate (GPU): 84.71%
+6.11.757.745 I slot update_slots: id  2 | task 2404 | Multi-token MoE expert hit rate (DRAM):  0.00%
+6.11.757.746 I slot update_slots: id  2 | task 2404 | Single-token MoE expert hit rate (GPU): 97.15%
+6.11.757.747 I slot update_slots: id  2 | task 2404 | Single-token MoE expert hit rate (DRAM):  0.00%
+[MDW][Info][Runtime] Save 256 tokens to folder 'benchmark_8k'
+6.11.891.692 I slot print_timing: id  2 | task 2404 | prompt eval time =    3347.25 ms /   185 tokens (   18.09 ms per token,    55.27 tokens per second)
+6.11.891.698 I slot print_timing: id  2 | task 2404 |        eval time =   16288.26 ms /   174 tokens (   93.61 ms per token,    10.68 tokens per second)
+6.11.891.699 I slot print_timing: id  2 | task 2404 |       total time =   19635.51 ms /   359 tokens
+6.11.891.700 I slot print_timing: id  2 | task 2404 |    graphs reused =       2553
+6.11.891.808 I slot      release: id  2 | task 2404 | stop processing: n_tokens = 510, truncated = 0
+6.11.891.822 I srv  update_slots: all slots are idle

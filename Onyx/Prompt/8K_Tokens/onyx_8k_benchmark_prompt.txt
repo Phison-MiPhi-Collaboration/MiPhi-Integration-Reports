@@ -1,0 +1,417 @@
+You are a context-processing benchmark assistant.
+Read the complete context. Do not answer until the entire context has been processed.
+The benchmark identifier is hidden somewhere in the context.
+At the end, answer only the final question.
+
+==================== CONTEXT START ====================
+
+Benchmark record 00001
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00001; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00002
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00002; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00003
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00003; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00004
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00004; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00005
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00005; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00006
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00006; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00007
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00007; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00008
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00008; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00009
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00009; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00010
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00010; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00011
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00011; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00012
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00012; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00013
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00013; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00014
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00014; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00015
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00015; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00016
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00016; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00017
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00017; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00018
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00018; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00019
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00019; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00020
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00020; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00021
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00021; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00022
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00022; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00023
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00023; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00024
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00024; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00025
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00025; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00026
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00026; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00027
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00027; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00028
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00028; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+
+SPECIAL RECORD:
+BENCHMARK_IDENTIFIER = ONYX-CONTEXT-8K-TEST-73921
+Benchmark record 00029
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00029; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00030
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00030; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00031
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00031; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00032
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00032; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00033
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00033; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00034
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00034; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00035
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00035; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00036
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00036; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00037
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00037; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00038
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00038; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00039
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00039; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00040
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00040; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00041
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00041; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00042
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00042; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00043
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00043; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00044
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00044; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00045
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00045; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00046
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00046; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00047
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00047; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00048
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00048; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00049
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00049; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+Benchmark record 00050
+System: Onyx context benchmark dataset.
+Component: document ingestion, retrieval, prompt processing, context reuse, and recomputation analysis.
+Record category: synthetic technical workload.
+Status: completed.
+Observation: This record is intentionally included as part of a long context window. The benchmark must preserve the ordering of records and process the complete input before answering the final question.
+Metadata: sequence=00050; source=synthetic; revision=2026-09-21.
+Notes: The contents of this record are not the answer unless explicitly requested. Continue reading the following records.
+
+===================== CONTEXT END =====================
+
+FINAL QUESTION:
+What is the value of BENCHMARK_IDENTIFIER?
+
+Answer only the benchmark identifier.

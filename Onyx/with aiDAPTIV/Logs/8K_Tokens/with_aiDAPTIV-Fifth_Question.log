@@ -1,0 +1,127 @@
+0.00.059.176 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.059.181 I device_info:
+0.00.060.216 I   - Vulkan0 : Intel(R) Graphics (18268 MiB, 17500 MiB free)
+0.00.060.223 I   - CPU     : Intel(R) Core(TM) Ultra 7 356H (32049 MiB, 18037 MiB free)
+0.00.060.270 I system_info: n_threads = 16 (n_threads_batch = 16) / 16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.060.275 I build: 71 NXWVB306.1 / b9568 (4e592a1) with MSVC 19.44.35213.0 for x64 
+0.00.060.276 I srv  llama_server: n_parallel is set to auto, using n_parallel = 4 and kv_unified = true
+0.00.060.277 I Environment Variables: 
+CLI Command: C:/Users/miphi/aiDAPTIV_NXWVB306.1_x64/aiDAPTIV_NXWVB306.1_x64/llama-server.exe --model C:/Users/miphi/models/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf --debug-log-path C:/Windows/Temp/8K --log-file C:/Windows/Temp/8K\2026-09-22_16-21-35_llama_server.log --ctx-size 32000 --port 8080 --host 127.0.0.1 --flash-attn auto --kv-cache-resume-policy 1 -ngl 100 --no-mmap --offload-path D:/nvme0 --vram-experts-cached-gb 8
+Configuration Content: 
+
+[MDW][Info][Runtime] Start Synchronizing
+[MDW][Info][Runtime] Finish Synchronizing
+[MDW][Info][Runtime] Powered by Phison aiDAPTIV+
+0.08.715.430 I srv          init: running without SSL
+0.08.715.456 I srv          init: using 15 threads for HTTP server
+0.08.715.557 I srv         start: binding port with default address family
+0.08.728.942 I srv  llama_server: loading model
+0.08.729.000 I srv    load_model: loading model 'C:/Users/miphi/models/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf'
+0.08.729.155 I common_init_result: fitting params to device memory ...
+0.08.729.162 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.10.963.759 W load: control-looking token:      1 '<eos>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.10.964.229 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.10.965.031 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.11.057.476 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[MDW][Info][Runtime] Number Vram MoE expert per layer: 71
+[MDW][Info][Runtime] Number Dram MoE expert per layer: 0
+[MDW][Info][Runtime] Shared Buffer Layers: 2
+[MDW][Info][Runtime] Vram size saved (Estimated): 5.420 GB
+[MDW][Info][Runtime] Offloaded layers: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29
+[MDW][Info][Runtime] Adopted a shared expert cache from a previous run.
+[MDW][Info][Runtime] Preload experts... 
+0.18.351.213 W llama_context: n_ctx_seq (32000) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.18.823.323 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.19.193.583 I srv    load_model: initializing slots, n_slots = 4
+0.19.644.175 W common_speculative_init: no implementations specified for speculative decoding
+0.19.644.193 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 32000
+0.19.644.205 I slot   load_model: id  1 | task -1 | new slot, n_ctx = 32000
+0.19.644.205 I slot   load_model: id  2 | task -1 | new slot, n_ctx = 32000
+0.19.644.206 I slot   load_model: id  3 | task -1 | new slot, n_ctx = 32000
+0.19.644.298 I srv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+0.19.644.299 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.19.644.299 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+[MDW][Info][Runtime] Tokens in node: 8
+[MDW][Info][Runtime] Transfer Buffer Node Count: 128
+[MDW][Info][Runtime] Arrange Node Count: 16
+[MDW][Info][Runtime] Node Sizes: 163840, 1802240
+[MDW][Info][Runtime] Shard Size: 163840
+[MDW][Info][Runtime] DRAM Maximum Node Count: 44745, CACHE Maximum Node Count: 46081356013
+0.19.740.656 W [MDW][Warning][Runtime] Trying to allocate 7331020800 bytes, but only 4528369664 bytes of DRAM are available. Insufficient DRAM capacity may reduce performance due to memory swapping.
+[MDW][Info][Runtime] Trying to resume KV cache...
+[MDW][Info][Runtime] KV cache resume completed
+[MDW][Info][Runtime] Resume subfolder: Benchmark_10k
+[MDW][Info][Runtime] Resume subfolder: Benchmark_8k
+[MDW][Info][Runtime] Resume subfolder: inference
+[MDW][Info][Runtime] Resume subfolder: test_2
+0.19.828.759 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.19.843.874 I init: chat template, example_format: '<|turn>system
+<|think|>
+You are a helpful assistant<turn|>
+<|turn>user
+Hello<turn|>
+<|turn>model
+Hi there<turn|>
+<|turn>user
+How are you?<turn|>
+<|turn>model
+'
+0.19.845.641 I srv          init: init: chat template, thinking = 1
+0.19.845.685 I srv  llama_server: model loaded
+0.19.845.690 I srv  llama_server: server is listening on http://127.0.0.1:8080
+0.19.845.713 I srv  update_slots: all slots are idle
+1.23.089.506 I srv  params_from_: Chat format: peg-gemma4
+1.23.109.212 I slot get_availabl: id  3 | task -1 | selected slot by LRU, t_last = -1
+1.23.109.412 I slot launch_slot_: id  3 | task 0 | processing task, is_child = 0
+1.23.109.532 I slot update_slots: id  3 | task 0 | Hit token cnt (GPU): 0
+1.23.387.625 I slot update_slots: id  3 | task 0 | Hit token cnt (DRAM): 0
+1.23.387.636 I slot update_slots: id  3 | task 0 | Hit token cnt (CACHE): 8440
+[MDW][Info][Runtime] Save 0 tokens to folder 'Benchmark_8k'
+1.23.626.447 I slot update_slots: id  3 | task 0 | saved checkpoint to Cache Storage (n_tokens = 8440)
+1.25.085.571 I reasoning-budget: activated, budget=2147483647 tokens
+1.36.133.728 I slot print_timing: id  3 | task 0 | n_decoded =    100, tg =   8.95 t/s
+1.39.186.624 I slot print_timing: id  3 | task 0 | n_decoded =    128, tg =   9.00 t/s
+1.42.308.952 I slot print_timing: id  3 | task 0 | n_decoded =    157, tg =   9.05 t/s
+1.45.411.665 I slot print_timing: id  3 | task 0 | n_decoded =    186, tg =   9.09 t/s
+1.48.431.329 I slot print_timing: id  3 | task 0 | n_decoded =    215, tg =   9.16 t/s
+1.51.458.654 I slot print_timing: id  3 | task 0 | n_decoded =    243, tg =   9.17 t/s
+1.54.490.579 I slot print_timing: id  3 | task 0 | n_decoded =    271, tg =   9.18 t/s
+1.56.487.459 I reasoning-budget: deactivated (natural end)
+1.57.552.938 I slot print_timing: id  3 | task 0 | n_decoded =    300, tg =   9.20 t/s
+1.59.555.083 I slot update_slots: id  3 | task 0 | Multi-token MoE expert hit rate (GPU): 66.84%
+1.59.555.091 I slot update_slots: id  3 | task 0 | Multi-token MoE expert hit rate (DRAM):  0.00%
+1.59.555.093 I slot update_slots: id  3 | task 0 | Single-token MoE expert hit rate (GPU): 97.45%
+1.59.555.093 I slot update_slots: id  3 | task 0 | Single-token MoE expert hit rate (DRAM):  0.00%
+[MDW][Info][Runtime] Save 336 tokens to folder 'Benchmark_8k'
+1.59.987.265 I slot print_timing: id  3 | task 0 | prompt eval time =    1848.04 ms /    22 tokens (   84.00 ms per token,    11.90 tokens per second)
+1.59.987.272 I slot print_timing: id  3 | task 0 |        eval time =   34596.42 ms /   319 tokens (  108.45 ms per token,     9.22 tokens per second)
+1.59.987.273 I slot print_timing: id  3 | task 0 |       total time =   36444.46 ms /   341 tokens
+1.59.987.276 I slot print_timing: id  3 | task 0 |    graphs reused =        316
+1.59.987.923 I slot      release: id  3 | task 0 | stop processing: n_tokens = 8780, truncated = 0
+1.59.987.946 I srv  update_slots: all slots are idle
+2.00.373.109 I srv  params_from_: Chat format: peg-gemma4
+2.00.373.798 I slot get_availabl: id  2 | task -1 | selected slot by LRU, t_last = -1
+2.00.373.835 I slot launch_slot_: id  2 | task 321 | processing task, is_child = 0
+2.00.373.863 I slot update_slots: id  2 | task 321 | Hit token cnt (GPU): 0
+2.00.415.391 I slot update_slots: id  2 | task 321 | Hit token cnt (DRAM): 0
+2.00.415.400 I slot update_slots: id  2 | task 321 | Hit token cnt (CACHE): 152
+[MDW][Info][Runtime] Save 48 tokens to folder 'Benchmark_8k'
+2.01.399.387 I slot update_slots: id  2 | task 321 | saved checkpoint to Cache Storage (n_tokens = 200)
+2.12.356.378 I slot print_timing: id  2 | task 321 | n_decoded =    100, tg =  11.05 t/s
+2.15.417.105 I slot print_timing: id  2 | task 321 | n_decoded =    133, tg =  10.98 t/s
+2.18.449.048 I slot print_timing: id  2 | task 321 | n_decoded =    166, tg =  10.96 t/s
+2.21.491.248 I slot print_timing: id  2 | task 321 | n_decoded =    201, tg =  11.05 t/s
+2.24.512.684 I slot print_timing: id  2 | task 321 | n_decoded =    234, tg =  11.04 t/s
+2.27.573.209 I slot print_timing: id  2 | task 321 | n_decoded =    267, tg =  11.00 t/s
+2.30.643.102 I slot print_timing: id  2 | task 321 | n_decoded =    300, tg =  10.98 t/s
+2.31.088.039 I slot update_slots: id  2 | task 321 | Multi-token MoE expert hit rate (GPU): 87.56%
+2.31.088.048 I slot update_slots: id  2 | task 321 | Multi-token MoE expert hit rate (DRAM):  0.00%
+2.31.088.050 I slot update_slots: id  2 | task 321 | Single-token MoE expert hit rate (GPU): 97.49%
+2.31.088.050 I slot update_slots: id  2 | task 321 | Single-token MoE expert hit rate (DRAM):  0.00%
+[MDW][Info][Runtime] Save 392 tokens to folder 'Benchmark_8k'
+2.31.286.218 I slot print_timing: id  2 | task 321 | prompt eval time =    2934.54 ms /   137 tokens (   21.42 ms per token,    46.69 tokens per second)
+2.31.286.220 I slot print_timing: id  2 | task 321 |        eval time =   27778.71 ms /   305 tokens (   91.08 ms per token,    10.98 tokens per second)
+2.31.286.220 I slot print_timing: id  2 | task 321 |       total time =   30713.25 ms /   442 tokens
+2.31.286.222 I slot print_timing: id  2 | task 321 |    graphs reused =        617
+2.31.286.297 I slot      release: id  2 | task 321 | stop processing: n_tokens = 593, truncated = 0
+2.31.286.308 I srv  update_slots: all slots are idle
